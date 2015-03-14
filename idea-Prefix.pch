@@ -1,0 +1,55 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+#import <Availability.h>
+
+#ifndef __IPHONE_6_0
+#  error "This project uses features only available in iOS SDK 6.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#  import <UIKit/UIKit.h>
+#  import <Foundation/Foundation.h>
+#  import <QuartzCore/QuartzCore.h>
+#  import <QuartzCore/CAAnimation.h>
+#  import <MessageUI/MessageUI.h>
+
+#  import <objc/message.h>
+#  import <objc/runtime.h>
+
+#endif
+
+
+
+#ifdef __OBJC__
+#  import "Idea.h"
+#endif
+
+
+#import "IdeaCompile.h"
+
+#ifdef __OBJC__
+#  if __LAUNCH_POP__
+#     import <POP/POP.h>
+#  endif
+#endif
+
+//#ifndef NSFoundationVersionNumber_iOS_7_0
+//#  define NSFoundationVersionNumber_iOS_7_0           1047.20
+//#endif
+//#ifndef NSFoundationVersionNumber_iOS_7_1
+//#  define NSFoundationVersionNumber_iOS_7_1           1047.25
+//#endif
+
+
+
+//#ifndef NS_DESIGNATED_INITIALIZER
+//#  if __has_attribute(objc_designated_initializer)
+//#     define NS_DESIGNATED_INITIALIZER       __attribute__((objc_designated_initializer))
+//#  else
+//#     define NS_DESIGNATED_INITIALIZER
+//#  endif
+//#endif
